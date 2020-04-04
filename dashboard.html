@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+    <link rel="stylesheet" href="dist/css/all.css" />
+    <link rel="stylesheet" href="dist/css/bootstrap.min.css" />
+    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous"> -->
+    <!-- <link rel="stylesheet" href="dist/css/style.css" /> -->
+    <link rel="stylesheet" href="dist/css/main.css" />
+    <link rel="stylesheet" href="dist/css/dash.css" />
+    
+    <title>FlashCard | Dashboard</title>
+</head>
+
+<body id="bg-img3">
+    <nav class="navbar navbar-expand-sm nav-bg navbar-dark fixed-top">
+        <div class="container">
+            <a href="#" class="navbar-brand">
+                <img src="dist/img/fc_logo.png" id="fc_logo_design" alt="FC">
+            </a>
+            <!-- <button class="navbar-toggler" data-toggle="collapse" data-target="#navColl">
+                <span class="navbar-toggler-icon"></span>
+            </button> -->
+
+            <!-- <div class="collapse navbar-collapse" id="navColl"> -->
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a href="#" class="nav-link"><i class="fas fa-sign-out-alt"></i> Sign out</a>
+                    </li>
+    
+                    <!-- <li class="nav-item">
+                        <a href="#" class="nav-link">Suyash </a>
+                    </li> -->
+                </ul>
+            <!-- </div> -->
+        </div>
+    </nav>
+
+    <div class="my-wrap">
+        <div class="container my-card mx-4">
+            
+            <div class="row">
+                <div class="deck-title">
+                    <i class="fas fa-box"></i>
+                <span>Decks</span>
+                </div>     
+            </div>
+
+            <a href="cards.html">
+                <div class="row head-row">
+                
+                    <div class="col-md-8 d-name t-head">
+                        <div class="inner">Data Structures</div>
+                    </div>
+                    <div class="col-md-4 num-cards t-head">
+                        <div class="inner">23 Cards</div>
+                    </div>
+                </div>
+            </a>
+
+            <div class="row head-row">
+                
+                <div class="col-md-8 d-name t-head">
+                    <div class="inner">Algorithms</div>
+                </div>
+                <div class="col-md-4 num-cards t-head">
+                    <div class="inner">12 Cards</div>
+                </div>
+            </div>
+
+            <div class="row head-row">
+                
+                <div class="col-md-8 d-name t-head">
+                    <div class="inner">Algorithms</div>
+                </div>
+                <div class="col-md-4 num-cards t-head">
+                    <div class="inner">12 Cards</div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <footer class="page-footer font-small fixed-bottom text-center bg2-light">
+
+        <div class="footer-copyright py-1 footer-text">
+            <button type="button" class="light-btn mb-2" data-toggle="modal" data-target="#AddDeckModal">
+                <i class="fas fa-plus-circle"></i>
+                Create a new Deck
+            </button>
+        </div>
+
+    </footer>
+
+    <!-- Modal -->
+    <div class="modal fade adder" id="AddDeckModal" tabindex="-1" role="dialog" aria-labelledby="AddDeckModalTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title ml-4">
+                    <i class="fas fa-plus-circle mr-1"></i>
+                    Create a new Deck
+                </h5>
+                <button type="button" class="close mr-4" data-dismiss="modal" aria-label="Close">
+                    <span id="close-modal" aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="container-fluid">
+                    <form action="">
+                        <div class="row">
+                            <!-- <input type="hidden" name="user_id" value="{{ user.id }}"> -->
+
+                            <div class="col-md-12 fields-border">
+                                <label for="title"><h6> Deck Title</h6></label>
+                                <input type="text" name="title" autocomplete="off" required>
+                            </div>
+
+                            <div class="col-md-12">
+                                <button type="button" data-dismiss="modal" class="light-btn done">Create my Deck</button>
+                            </div>
+                        
+                        </div>
+                            
+                    </form>
+                </div>
+            </div>
+            
+        </div>
+        </div>
+    </div>
+
+    <script src="dist/js/jquery-3.3.1.min.js"></script>
+
+    <script src="dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
